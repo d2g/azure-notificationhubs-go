@@ -6,6 +6,7 @@ const (
 	AppleFormat        NotificationFormat = "apple"
 	BaiduFormat        NotificationFormat = "baidu"
 	GcmFormat          NotificationFormat = "gcm"
+	FcmV1Format        NotificationFormat = "fcmV1"
 	KindleFormat       NotificationFormat = "adm"
 	WindowsFormat      NotificationFormat = "windows"
 	WindowsPhoneFormat NotificationFormat = "windowsphone"

@@ -1,3 +1,3 @@
-module github.com/daresaydigital/azure-notificationhubs-go
+module github.com/d2g/azure-notificationhubs-go
 
 go 1.12

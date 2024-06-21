@@ -12,7 +12,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/daresaydigital/azure-notificationhubs-go/utils"
+	"github.com/d2g/azure-notificationhubs-go/utils"
 )
 
 // NotificationHub is a client for sending messages through Azure Notification Hubs

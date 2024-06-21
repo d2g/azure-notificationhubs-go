@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"time"
 
-	. "github.com/daresaydigital/azure-notificationhubs-go"
-	"github.com/daresaydigital/azure-notificationhubs-go/utils"
+	. "github.com/d2g/azure-notificationhubs-go"
+	"github.com/d2g/azure-notificationhubs-go/utils"
 )
 
 // Internal constants for testing

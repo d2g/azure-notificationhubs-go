@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/daresaydigital/azure-notificationhubs-go"
+	. "github.com/d2g/azure-notificationhubs-go"
 )
 
 func Test_NotificationHubendFanout(t *testing.T) {

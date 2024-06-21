@@ -107,7 +107,7 @@ func (h *NotificationHub) sendDirect(ctx context.Context, n *Notification, devic
 			"Content-Type":                        n.Format.GetContentType(),
 			"ServiceBusNotification-Format":       string(n.Format),
 			"ServiceBusNotification-DeviceHandle": deviceHandle,
-			"X-Apns-Expiration":                   string(h.expirationTimeGenerator.GenerateTimestamp()), //apns-expiration
+			"X-Apns-Expiration":                   fmt.Sprint(h.expirationTimeGenerator.GenerateTimestamp()), //apns-expiration
 		}
 		query = h.HubURL.Query()
 	)
@@ -167,7 +167,7 @@ func (h *NotificationHub) sendDirectBatch(ctx context.Context, n *Notification, 
 		headers = Headers{
 			"Content-Type":                  multi.FormDataContentType(),
 			"ServiceBusNotification-Format": string(n.Format),
-			"X-Apns-Expiration":             string(h.expirationTimeGenerator.GenerateTimestamp()), //apns-expiration
+			"X-Apns-Expiration":             fmt.Sprint(h.expirationTimeGenerator.GenerateTimestamp()), //apns-expiration
 		}
 		query = h.HubURL.Query()
 	)
